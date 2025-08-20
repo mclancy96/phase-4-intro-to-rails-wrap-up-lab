@@ -1,0 +1,80 @@
+# Ignore bundler config.
+/.bundle
+
+# Ignore the default SQLite database.
+/db/*.sqlite3
+/db/*.sqlite3-journal
+
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Ignore uploaded files in development.
+/storage/*
+!/storage/.keep
+
+# Ignore master key for decrypting credentials and more.
+/config/master.key
+/config/credentials.yml.enc
+
+# Ignore node modules and yarn files.
+/node_modules
+/yarn-error.log
+/yarn-debug.log*
+
+# Ignore byebug command history file.
+.byebug_history
+
+# Ignore Mac system files
+.DS_Store
+
+# Ignore coverage reports
+/coverage/
+
+# Ignore environment files
+.env
+.env.*
+
+# Ignore editor swap/backup files
+*~
+*.swp
+*.swo
+
+# Ignore VSCode settings
+.vscode/
+
+# Ignore Docker artifacts
+*.pid
+/docker-compose.override.yml
+
+# Ignore other system files
+*.bak
+*.tmp
+
+# Ignore test and cache files
+/spec/examples.txt
+/spec/tmp
+
+# Ignore RuboCop cache
+.rubocop-https---*
+.rubocop_cache/
+
+# Ignore pry history
+.pry_history
+
+# Ignore public assets that are generated
+/public/assets
+/public/packs
+/public/packs-test
+/public/packs-dev
+/public/packs-prod
+/public/service-worker.js
+/public/manifest.json
+/public/robots.txt
+
+# Ignore Sprockets/Propshaft manifest
+/public/assets/manifest-*.json
+/public/assets/.sprockets-manifest-*.json
+/public/assets/.propshaft-manifest-*.json

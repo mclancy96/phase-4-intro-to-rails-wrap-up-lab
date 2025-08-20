@@ -1,0 +1,22 @@
+
+<h1><%= @article.title %></h1>
+<p><strong>Author:</strong> <%= @article.author %></p>
+<p><%= @article.body %></p>
+
+<h2>Comments</h2>
+<ul>
+  <% @article.comments.each do |comment| %>
+    <%= render 'comments/comment', comment: comment %>
+  <% end %>
+</ul>
+
+<h3>Add a Comment</h3>
+<%= form_with(model: [@article, Comment.new], local: true) do |form| %>
+  <div>
+    <%= form.label :body, 'Comment' %><br>
+    <%= form.text_area :body %>
+  </div>
+  <div>
+    <%= form.submit 'Add Comment' %>
+  </div>
+<% end %>

@@ -1,0 +1,4 @@
+<li>
+	<%= comment.body %>
+	<%= button_to 'Delete', article_comment_path(comment.article, comment), method: :delete, data: { confirm: 'Are you sure?' } %>
+</li>
